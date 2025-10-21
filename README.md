@@ -12,16 +12,38 @@ Multi-layer security scanner for npm packages to detect supply chain attacks.
 
 ## Installation
 
+### Option 1: Install from npm (Coming Soon)
+
+```bash
+# Global installation
+npm install -g npm-guardian
+
+# Use anywhere
+npm-guardian /path/to/project
+```
+
+### Option 2: Install from GitHub
+
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/npm-guardian.git
+git clone https://github.com/SahniNitish/npm-guardian.git
 cd npm-guardian
 
 # Install dependencies
 npm install
 
-# Make it executable globally (optional)
+# Make it executable globally
 npm link
+
+# Or run directly
+node index.js /path/to/project
+```
+
+### Option 3: Use via npx (No Installation)
+
+```bash
+# Run directly without installing
+npx github:SahniNitish/npm-guardian /path/to/project
 ```
 
 ## Usage

@@ -1,0 +1,49 @@
+{
+  "name": "npm-guardian",
+  "version": "1.0.0",
+  "description": "Multi-layer security scanner for npm packages to detect supply chain attacks",
+  "main": "index.js",
+  "bin": {
+    "npm-guardian": "./index.js"
+  },
+  "scripts": {
+    "test": "node index.js .",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "security",
+    "npm",
+    "scanner",
+    "supply-chain",
+    "malware-detection",
+    "typosquatting",
+    "dependency-scanner",
+    "vulnerability-scanner",
+    "package-security"
+  ],
+  "author": "Nitish Sahni (0263900)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SahniNitish/npm-guardian.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SahniNitish/npm-guardian/issues"
+  },
+  "homepage": "https://github.com/SahniNitish/npm-guardian#readme",
+  "files": [
+    "index.js",
+    "scanner.js",
+    "detector.js",
+    "utils.js",
+    "README.md"
+  ],
+  "dependencies": {
+    "@npmcli/arborist": "^7.2.1",
+    "acorn": "^8.11.3",
+    "axios": "^1.6.7",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.3",
+    "commander": "^11.1.0"
+  }
+}
